@@ -1,0 +1,113 @@
+<html>
+    <head>
+        <title>Layout-4</title>
+        <style>
+            
+            .item1{grid-area: logo;}
+            .item2{grid-area: navigation;}
+
+            .grid-container{
+                display: grid;
+                grid-template-areas: 'logo logo logo logo logo logo navigation navigation navigation navigation navigation navigation';
+                background-color: rgb(255, 255, 255);
+                padding: 10px;
+            }
+
+            .grid-container > div{
+                background-color: rgb(104, 104, 108);
+                padding: 20px 0;
+                text-align: center;
+                font-size: 30px;
+            }
+
+            .item3{grid-area: box1;}
+            .item4{grid-area: box2;}
+            .item5{grid-area: box3;}
+            .item6{grid-area: box4;}
+            .item7{grid-area: box5;}
+            .item8{grid-area: box6;}
+            .item9{grid-area: box7;}
+            .item10{grid-area: box8;}
+            .item11{grid-area: box9;}
+            .item12{grid-area: box10;}
+            .item13{grid-area: box11;}
+            .item14{grid-area: box12;}
+            .item15{grid-area: box13;}
+            .item16{grid-area: box14;}
+            .item17{grid-area: box15;}
+            .item18{grid-area: box16;}
+
+            .grid-container1{
+                display: grid;
+                grid-template-areas: 'box1 box1 box2 box2 box3 box3 box4 box4'
+                'box5 box5 box6 box6 box7 box7 box8 box8'
+                'box9 box9 box10 box10 box11 box11 box12 box12'
+                'box13 box13 box14 box14 box15 box15 box16 box16';
+                background-color: rgb(255, 255, 255);
+                padding: 10px;
+                gap: 30px;
+            }
+
+            .grid-container1 > div{
+                background-color: rgb(104, 104, 108);
+                padding: 20px 0;
+                text-align: center;
+                font-size: 30px;
+            }
+
+            .item19{grid-area: box_1;}
+            .item20{grid-area: box_2;}
+            .item21{grid-area: box_3;}
+            .item22{grid-area: footer;}
+
+            .grid-container2{
+                display: grid;
+                grid-template-areas: 'box_1 box_2 box_3'
+                'footer footer footer';
+                background-color: rgb(255, 255, 255);
+                padding: 10px;
+                gap: 10px;
+            }
+
+            .grid-container2 > div{
+                background-color: rgb(104, 104, 108);
+                padding: 20px 0;
+                text-align: center;
+                font-size: 30px;
+            }
+
+        </style>
+    </head>
+    <body style="padding-left: 50px; padding-right: 50px; background-color: rgb(255, 255, 255);">
+        <div style="width: 1400px;">
+            <div class="grid-container">
+                <div class="item1">logo</div>
+                <div class="item2">navigation</div>
+            </div>
+            <div class="grid-container1">
+                <div class="item3" style="height: 150px;"></div>
+                <div class="item4" style="height: 150px;"></div>
+                <div class="item5" style="height: 150px;"></div>
+                <div class="item6" style="height: 150px;"></div>
+                <div class="item7" style="height: 150px;"></div>
+                <div class="item8" style="height: 150px;"></div>
+                <div class="item9" style="height: 150px;"></div>
+                <div class="item10" style="height: 150px;"></div>
+                <div class="item11" style="height: 150px;"></div>
+                <div class="item12" style="height: 150px;"></div>
+                <div class="item13" style="height: 150px;"></div>
+                <div class="item14" style="height: 150px;"></div>
+                <div class="item15" style="height: 150px;"></div>
+                <div class="item16" style="height: 150px;"></div>
+                <div class="item17" style="height: 150px;"></div>
+                <div class="item18" style="height: 150px;"></div>
+            </div>
+            <div class="grid-container2">
+                <div class="item19" style="height: 100px; padding-top: 100px;">Box 1</div>
+                <div class="item20" style="height: 100px; padding-top: 100px;">Box 2</div>
+                <div class="item21" style="height: 100px; padding-top: 100px;">Box 3</div>
+                <div class="item22">footer</div>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <title>Layout-3</title>
+        <style>
+            .item1{ grid-area: Logo;}
+            .item2{ grid-area: navigation;height: 500px;}
+            .item3{ grid-area: header; height: 100px;}
+            .item4{ grid-area: body;height: 350px;}
+            .item5{ grid-area: footer;}
+
+            .grid-container{
+                display: grid;
+                grid-template-areas: 
+                'Logo Logo Logo Logo Logo Logo'
+                'navigation header header header header header'
+                'navigation body body body body body'
+                'footer footer footer footer footer footer';
+                gap: 10px;
+                background-color: rgb(255, 255, 255);
+                padding: 10px;
+            }
+            .grid-container > div{
+                background-color: rgb(142, 142, 138);
+                text-align: center;
+                padding: 20px 0;
+                font-size: 30px;
+            }
+
+        </style>
+    </head>
+    <body style="padding-left: 50px; padding-right: 50px;">
+        <div class="grid-container">
+            <div class="item1">logo</div>
+            <div class="item2" style="background-color: rgb(255, 255, 255);">navigation</div>
+            <div class="item3">header</div>
+            <div class="item4">body</div>
+            <div class="item5">footer</div>
+        </div>
+    </body>
+</html>

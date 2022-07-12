@@ -1,0 +1,63 @@
+<html>
+    <head>
+        <title>The Car Company</title>
+        <style type="text/css"></style>
+        <link href="website_css.css" rel="stylesheet">
+        <style>
+            #img_rotate:hover{
+                transform: rotate(360deg);
+                transition: 2s;
+            }
+            .op{
+                opacity: 70%;
+            }
+            .centered{
+                position: absolute;
+                top: 10%;
+                left: 45%;
+            }
+            .container{
+                position: relative;
+                text-align: center;
+                color: black;
+            }
+            #more_scale:hover{
+                transform: scale(1.5,1.5);
+                transition: 2s;
+            }
+            #cars_rotate:hover{
+                transform: rotate(3670deg);
+                transition:2s;
+            }
+            #cars_skew:hover{
+                transform: skew(45deg);
+                transition: 2s;
+            }
+            #thar_rotate3D:hover{
+                transform: rotate3d(1,1,0,360deg);
+                transition: 2s;
+            }
+            #thank_you:hover{
+                text-shadow: 3px 3px 3px red;
+                transition: 3s;
+            }
+        </style>
+    </head>
+    <body style="padding-left: 30px; padding-right: 30px;">
+        <div style="padding: 2px; z-index: -2; height: 70px;" class="container" id="div1">
+            <img src="Company_logo.png" alt="Company Logo" style="height: 56px; width: 200px; margin-top: 7px;" id="img_rotate" class="op">
+            <div class="centered" style="z-index: -1; font-family: cursive;">
+            <h4>The Car Company</h4>
+        </div>
+        </div><br>
+        <div id="div1">
+            <div style="background-color:rgb(124, 153, 232);text-align: center; width: 100px; height: 20px;">
+                <h3 id="more_scale"><a href="Keyframe_animation.html">Animation...</a></h3>
+            </div>
+        </div><br>
+        <div id="div2" style="text-align: center; padding-top: 50px;"><h4 id="cars_rotate">cars</h4></div><br>
+        <div id="div3" style="text-align: center;"><h4 id="cars_skew">This is the car</h4></div>
+        <div id="div4" style="text-align: center;"><img src="Mahindra-Thar.jpg" height="300px" width="900px" style="margin-top: 20px;" id="thar_rotate3D"/></div>
+        <div id="div5" style="text-align: center;"><h4 id="thank_you">Thank You</h4></div>
+    </body>
+</html>
